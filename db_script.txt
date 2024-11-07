@@ -1,0 +1,15 @@
+CREATE DATABASE urheilijat;
+
+USE urheilijat;
+
+CREATE TABLE athletes (
+    id MEDIUMINT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    nickname VARCHAR(255),
+    birth_year MEDIUMINT NOT NULL,
+    weight DECIMAL(5,2) NOT NULL,
+    image_url VARCHAR(255),
+    sport VARCHAR(255) NOT NULL,
+    achievements TEXT
+);
